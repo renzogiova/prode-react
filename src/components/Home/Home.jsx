@@ -1,12 +1,17 @@
-import Navbar from '../Navbar/Navbar';
+import { useState } from 'react';
+import NavbarBasic from '../NavbarBasic/NavbarBasic';
 import Sidebar from '../Sidebar/Sidebar';
 import Footer from '../Footer/Footer';
 
 function Home() {
+  const [showSidebar, setShowSidebar] = useState(false);
+  const toggleSidebar = () => {
+    setShowSidebar(!showSidebar);
+  }
   return (
-    <div>
-      <Navbar/>
-      <Sidebar/>
+    <div style={{position: 'relative'}}>
+      <NavbarBasic toggleSidebar={toggleSidebar}/>
+      <Sidebar showSidebar={showSidebar} toggleSidebar={toggleSidebar}/>
       <main>
         <div>
           <div>

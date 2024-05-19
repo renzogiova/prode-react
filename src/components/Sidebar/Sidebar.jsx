@@ -4,29 +4,39 @@ import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 
-function Sidebar() {
+// styles
+import SidebarStyles from './Sidebar.module.css';
+
+function Sidebar(props) {
+  const { showSidebar } = props;
   return (
-    <div>
-      <Navbar>
-        <Container>
-          <Nav>
-            <Nav.Link>
-              HOME
-            </Nav.Link>
-            <Nav.Link>
-              Calendario
-            </Nav.Link>
-            <Nav.Link>
-              Resultados
-            </Nav.Link>
-            <Nav.Link>
-              Clasificacion
-            </Nav.Link>
-            <Nav.Link>
-              Mis torneos
-            </Nav.Link>
-          </Nav>
-        </Container>
+    <div className={`${!showSidebar && SidebarStyles.hiddenSidebar} ${SidebarStyles.sidebar}`}>
+      <Navbar className={SidebarStyles.navbar}>
+        <Nav.Item>
+          <Nav.Link>
+            HOME
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link>
+            Calendario
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link>
+            Resultados
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link>
+            Clasificacion
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link>
+            Mis torneos
+          </Nav.Link>
+        </Nav.Item>
       </Navbar>
     </div>
   )

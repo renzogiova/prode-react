@@ -1,0 +1,13 @@
+.sidebar{
+  position: absolute;
+  top: 60px;
+}
+
+.hiddenSidebar {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
