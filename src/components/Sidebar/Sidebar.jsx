@@ -12,27 +12,30 @@ function Sidebar(props) {
   return (
     <div className={`${!showSidebar && SidebarStyles.hiddenSidebar} ${SidebarStyles.sidebar}`}>
       <Navbar className={SidebarStyles.navbar}>
-        <Nav.Item>
+        <Navbar.Brand style={{color: '#ffffff', padding: 0, marginRight: 0, marginBottom: 20}}>
+          EL PRODE
+        </Navbar.Brand>
+        <Nav.Item className={SidebarStyles.sidebarItem}>
           <Nav.Link>
-            HOME
+            Inicio
           </Nav.Link>
         </Nav.Item>
-        <Nav.Item>
+        <Nav.Item className={SidebarStyles.sidebarItem}>
           <Nav.Link>
             Calendario
           </Nav.Link>
         </Nav.Item>
-        <Nav.Item>
+        <Nav.Item className={SidebarStyles.sidebarItem}>
           <Nav.Link>
             Resultados
           </Nav.Link>
         </Nav.Item>
-        <Nav.Item>
+        <Nav.Item className={SidebarStyles.sidebarItem}>
           <Nav.Link>
             Clasificacion
           </Nav.Link>
         </Nav.Item>
-        <Nav.Item>
+        <Nav.Item className={SidebarStyles.sidebarItem}>
           <Nav.Link>
             Mis torneos
           </Nav.Link>

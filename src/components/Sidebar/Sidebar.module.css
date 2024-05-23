@@ -1,6 +1,21 @@
 .sidebar{
-  position: absolute;
-  top: 60px;
+  /* position: absolute; */
+  /* top: 60px; */
+  width: 100%;
+  background-color: #3d63d2;
+  height: 100%;
+  color: #ffffff;
+}
+
+.sidebarItem {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sidebarItem:hover {
+  background-color: #1C357C;
+  background-color: #1F42A3;
 }
 
 .hiddenSidebar {
