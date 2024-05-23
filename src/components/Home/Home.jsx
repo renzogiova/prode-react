@@ -10,14 +10,11 @@ function Home() {
     setShowSidebar(!showSidebar);
   }
   return (          
-      // <Container fluid style={{minHeight: '100vh', height: '100%', padding: 0}}>
       <Container fluid style={{height: '100%', padding: 0}}>
         <Row style={{height: '100%', width: '100%', margin:0}}>
-          {/* Sidebar COL */}
           <Col xs={2} style={{padding:0}}>
             <Sidebar showSidebar={showSidebar} toggleSidebar={toggleSidebar}/>          
           </Col>
-          {/* PAGE CONTENT COL */}
           <Col xs={10} style={{padding:0}}>
             <NavbarBasic toggleSidebar={toggleSidebar}/>
             <main>
