@@ -19,18 +19,15 @@ function NavbarBasic(props) {
       style={{
         display: 'flex',
         justifyContent: 'space-between',
-        padding: 8
+        padding: 8,
+        border: '1px solid red'
       }}
       >
-      {/* <Container> */}
         <div>
           <Button variant="secondary" onClick={handleMenu} style={{display:'none'}}>
             <AiOutlineMenu />
           </Button>
         </div>  
-        <div>
-          {/* <h1 style={{margin:0}}> EL PRODE </h1> */}
-        </div>
         <div style={{display: 'flex'}}>
           <div>
             <Button variant='Secondary'>

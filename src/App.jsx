@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       {/* <AuthTabs /> */}
-      {/* <Home /> */}
-      <Clasificacion/>
+      <Home />
+      {/* <Clasificacion/> */}
     </>
   )
 }
