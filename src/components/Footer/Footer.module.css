@@ -4,4 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  background-color: #d8e0f6;
+  /* background: rgb(61,99,210);
+  background: linear-gradient(90deg, rgba(61,99,210,1) 0%, rgba(2,0,36,1) 100%, rgba(0,212,255,1) 100%); */
 }
