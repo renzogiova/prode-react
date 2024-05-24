@@ -7,7 +7,7 @@ import Sidebar from '../Sidebar/Sidebar';
 import NavbarBasic from '../NavbarBasic/NavbarBasic';
 import Footer from '../Footer/Footer';
 
-import clasificacion from '../../mock/clasificacion';
+import data from '../../mock/data';
 
 
 function Clasificacion() {
@@ -27,7 +27,7 @@ function Clasificacion() {
             <h1>Clasificacion</h1>
             <div style={{display:'flex', justifyContent: 'space-around', flexWrap:'wrap'}}>
                 {
-                  Object.keys(clasificacion).map(grupo => {
+                  Object.keys(data).map(grupo => {
                     return (
                       <div style={{width: '360px'}}>
                         <h2> {grupo} </h2>
@@ -48,7 +48,7 @@ function Clasificacion() {
                           </thead>
                           <tbody>
                             {
-                              clasificacion[grupo].map(equipo => {
+                              data[grupo].map(equipo => {
                                 console.log(equipo)
                                 return (
                                   <tr>

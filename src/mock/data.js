@@ -1,4 +1,4 @@
-const clasificacion = {
+const data = {
   "grupoA": [
     {
       "nombre": "argentina",
@@ -200,4 +200,4 @@ const clasificacion = {
     }
   ]
 }
-export default clasificacion;
+export default data;

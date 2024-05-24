@@ -1,0 +1,32 @@
+.groupCard {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  min-width: 180px;
+  color: #f9f8fb;
+  padding: 0.25rem;
+}
+
+.headerCard {
+  text-align: center;
+}
+
+.headerText {
+  font-weight: bold;
+}
+
+.groupA {
+  background-color: #003282;
+}
+
+.groupB {
+  background-color: #e84730;  
+}
+
+.groupC {
+  background-color: #8dc63f;
+}
+
+.groupD {
+  background-color: #ffed00;
+}
