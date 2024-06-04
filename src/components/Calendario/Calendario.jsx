@@ -2,7 +2,9 @@ import { useState } from 'react';
 import NavbarBasic from '../NavbarBasic/NavbarBasic';
 import Sidebar from '../Sidebar/Sidebar';
 import Footer from '../Footer/Footer';
-import { Col, Container, Row } from 'react-bootstrap';
+import { CardHeader, Col, Container, Row } from 'react-bootstrap';
+import Card from 'react-bootstrap/Card';
+
 
 import CalendarioStyles from './Calendario.module.css';
 
@@ -70,7 +72,32 @@ function Calendario() {
                   <div><span>CANADA</span></div>
                 </div>
               </div>
+
             </div>
+
+            <div>
+              
+              <Card>
+                <Card.Header>
+                  GRUPO A
+                </Card.Header>
+                <Card.Body>
+                  <div>
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
+                  </div>
+                </Card.Body>
+                <Card.Footer>
+                  <p>Mercedes Benz Stadium - Atlanta, GA</p>
+                </Card.Footer>
+              </Card>
+
+            </div>
+
           </main>
         </Col>
       </Row>
